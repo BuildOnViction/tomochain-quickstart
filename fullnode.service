@@ -1,0 +1,12 @@
+[Unit]
+Description=Fullnode
+
+[Service]
+Type=simple
+ExecStart=$HOME/start_node.sh
+
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
